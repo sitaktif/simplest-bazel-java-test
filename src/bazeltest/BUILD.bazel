@@ -1,0 +1,10 @@
+java_import(
+    name = "junit",
+    jars = ["junit-4.13.jar"],
+)
+
+java_test(
+    name = "JavaTest",
+    srcs = ["JavaTest.java"],
+    deps = [":junit"],
+)
